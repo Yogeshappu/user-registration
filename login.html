@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login Form Tutorial</title>
+	<style>
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+	</style>
+	<!-- <script
+		 src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+			 </script>  -->
+</head>
+
+<body>
+	<div class="login-form">
+		<h1>Login Form</h1>
+		<!-- <div>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>Username</th>
+								<th>Email</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody id="lblResponse"></tbody>
+					</table>
+				</div>
+				<script>
+					$(document).ready(function () {
+						var data = {};
+						data.title = "title";
+						data.message = "message";
+						$.ajax({url: 'http://localhost:3000/list',
+							// dataType: "jsonp",
+							data: JSON.stringify(data),
+							contentType: 'application/json',
+							type: 'get',
+							success: function (data) {
+								var result = '';
+								$.each(data, function(key, value) {
+									result+= '<tr><th>' + value.userName + '</th><th>' + value.emailId + '</th><th>' + value.location + '</th></tr>';
+								});
+								$('#lblResponse').html(result);
+								console.log('Success: ', data);
+							},
+							error: function (xhr, status, error) {
+								console.log('Error: ' + error);
+								$('#lblResponse').html('Error connecting to the server.');
+							},
+						});
+					});
+				</script>
+			</div>  -->
+		<form action="auth" method="POST">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="submit">
+		</form>
+		<p><a href="registerform">Doesnot have an account?Register</a></p>
+	</div>
+</body>
+</html>

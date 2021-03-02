@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Register Form Tutorial</title>
+	<style>
+		.Register-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		.Register-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+
+		.Register-form input[type="password"],
+		.Register-form input[type="text"],
+		.Register-form input[type="number"],
+		.Register-form input[type="email"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+
+		.Register-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #526e8a;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="Register-form">
+		<h1>Register Form</h1>
+		<form action="register" method="POST">
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="password" name="confirmpassword" placeholder="confirm password" required>
+			<input type="email" name="email" placeholder="email" required>
+			<input type="number" name="mobilenumber" placeholder="mobile number" required>
+			<input type="submit">
+		</form>
+		<p>Already have an account? <a href="loginform">LOGIN >></a></p>
+	</div>
+</body>
+
+</html>
